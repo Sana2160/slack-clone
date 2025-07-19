@@ -72,14 +72,19 @@ function Sidebar(props: Props) {
           </li>
         </ul>
 
-        <div className="section-header channels-header">
+        <div
+          className="section-header channels-header"
+          onClick={() => setShowUserSearchModal(true)}
+        >
           <span className="channel-icon add">+</span> Invite Pepole
         </div>
       </div>
       {showCreateChannelModal && (
         <CreateChannelModal onSubmit={createChannel} />
       )}
-      {showUserSearchModal && <UserSearchModal />}
+      {showUserSearchModal && (
+        <UserSearchModal workspaceId={selectedWorkspace.id} />
+      )}
     </div>
   );
 }
