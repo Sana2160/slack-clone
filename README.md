@@ -29,14 +29,6 @@
 - メッセージの送信／表示
 - メンバー情報の表示
 
-## 🎨 画面イメージ（任意）
-
-> スクリーンショットをここに貼るとよりわかりやすくなります
-
-例:
-
-
-
 # React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
